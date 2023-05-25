@@ -17,7 +17,8 @@ public class MaxProfit {
     }
     public static void main(String[] args){
         int[] price={7,1,4,5,6,3};
-        maxprofit(price);
+       int x= maxprofit(price);
+       System.out.println("maximum profit is: "+x);
     }
 
 }

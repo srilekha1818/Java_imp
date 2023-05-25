@@ -19,7 +19,8 @@ public class MaxProd {
     }
     public static void main(String[] args){
         int ar[]={1,-2,4,-3};
-        maxprod(ar);
+        int x=maxprod(ar);
+        System.out.println("maximum product is: "+x);
     }
     
 }
