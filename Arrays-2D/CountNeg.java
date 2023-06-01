@@ -1,7 +1,7 @@
 
 public class CountNeg {
 
-    public static  int countNegatives(int[][] grid) {
+   /*  public static  int countNegatives(int[][] grid) {
         int m = grid.length, n = grid[0].length;
         int res = 0;
         for (int i = 0; i < m; i++) {
@@ -24,9 +24,35 @@ public class CountNeg {
                 }
                 return 0;
             }
+            */
+            public static  int countNegatives(int[][] grid) {
+                int count=0;
+                int n=grid[0].length;
+                //iterate all rows of the matrix one by one
+                for(int[] row:grid){
+                    //find index that contains first negative element using binary search
+                    int left=0;
+                    int right =n-1;
+                    while(left <=right){
+                        int mid=(right+left)/2;
+                        if(row[mid]<0){
+                            right=mid-1;
+                        }
+                        else{
+                            left=mid+1;
+                        }
+
+
+                    }
+                    count+=(n-left);
+                }
+                return count;
+            }
+
+
                 public static void main(String[] args){
                     int[][] grid={{1,0,-1},{2,1,-1},{1,-1,-2}};
-                   System.out.println(countNegatives(grid));
+                   System.out.println("count of negative numbers in the given array is: "+countNegatives(grid));
                 }
     
 }
