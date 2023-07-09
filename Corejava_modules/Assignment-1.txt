@@ -1,0 +1,74 @@
+
+Q1.What is the difference between Compiler and Interpreter?
+compiler -> It is a software which takes sourcecode(HLL) as the input and generates
+MLL code as the ouput
+To convert the HLL code to MLL code compiler will scan the HLL code
+only once.
+Interpreter =>It is a software which takes sourcecode(HLL) as the input and
+generates MLL code as the ouput
+To convert the HLL code to MLL code interpreter will scan the HLL
+code mulitple times(depends on the instrcutions).
+
+Q2.What is the difference between JDK, JRE, and JVM?
+=> java program to run we need to set up the environment in our machines
+=> To set up the environment we need to install JDK software to our machines.
+=> JDK stands for Java Development kit, it provides libraries and the requried
+files to run our java programs
+=> JDK :: JRE + JVM
+=> JRE :: Java RunTimeEnvironment, It provides suitable environment to run our
+java program.
+=> JVM :: Java Virtual Machine, It is responsible to run our java programs on the
+basis of MultiThreading
+Q3.How many types of memory areas are allocated by JVM?
+types of memory areas are allocated by JVM:
+Class(Method) Area
+Heap
+Stack
+Program Counter Register
+Native Method Stack
+
+Q4.What is JIT compiler?
+A just-in-time (JIT) compiler is a program that turns bytecode into instructions that can be sent directly to a 
+computer's processor (CPU). 
+Q5.What are the various access specifiers in Java?
+Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+Default: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
+Protected: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
+Public: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
+ 
+Q6.What is a compiler in Java?
+java programs will be first compiled,to compile java program we need java
+compiler and java compiler will be installed when we install
+jdk software.
+
+=> javaprogram would be first compiled(javac filename.java)
+=> If the compilation is succesfull, it would generate .class file
+=> These .class files will be used by jvm during the execution
+=> .class file generated will have instructions in bytecode(neither HLL nor MLL).
+=> bytecodes will be taken by JVM and it will be loaded inside JRE, then the
+execution begins.
+
+Q7.Explain the types of variables in Java?
+There are three types of variables in Java:
+local variable:A variable declared inside the body of the method is called local variable.
+instance variable:A variable declared inside the class but outside the body of the method, is called an instance variable.
+static variable:A variable that is declared as static is called a static variable.You can create a 
+single copy of the static variable and share it among all the instances of the class.
+
+Q8.What are the Datatypes in Java?
+Datatypes:
+Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
+Non-primitive data types: The non-primitive data types include Classes, Interfaces, and Arrays.
+
+Q9.What are the identifiers in java?
+identifer is a name in java program.
+identifer can be classname,methodname,variablename,labelname.
+
+Q10.Explain the architecture of JVM.
+Java code is first compiled into byte code to generate a class file. This class file is then interpreted 
+by the Java Virtual Machine for the underlying platform.
+The same class file can be executed on any version of JVM running on any platform and operating system.
+The JVM consists of three distinct components:
+1.Class Loader
+2.Runtime Memory/Data Area
+3.Execution Engine
