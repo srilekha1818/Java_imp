@@ -1,0 +1,44 @@
+Data types
+==========
+In real world how many types of data we actually come cross?
+1. Number
+a. Integral type
+byte,short,int,long
+b. Floating type
+float,double
+
+2. Character
+a. char
+3. Boolean type
+a. boolean
+4. Images,audio,video
+a. LOB's(Large Object)
+What is the need of dataype is java langauge?
+=> Every variable has a type,every expression has a type and all types are
+strictly defined,moreover every assignement
+should be checked by the compiler for type compatiblity, hence java langauge is
+strictly typed programming language.
+=> Since the language is strictly typed, we expect the programmer to specify the
+type of data we are keeping inside the
+variable.
+=> To tell what type of data is kept inside the variable to the langauge, we need
+to tell through "DataType".
+eg::
+int a;
+int b = a+10;
+Is java a dynamic programming language?
+=> Java is dynamic programming language,because memory for the datatype is
+allocated by the JVM at the runtime.
+int a = 10;
+|=> datatype(used by compiler to check for compatability)
+|=> During the execution of the program,jvm sees int, allocates 4 bytes of
+memory as per datatype specification
+and the value 10 will be stored inside 4bytes memory and for that
+4bytes memory name is assigned as "a".
+Dynamically typed language
+==========================
+a = 10;
+a ="sachin";
+a = 54.5;
+a = true;
+eg:: python,javascript,php,......
